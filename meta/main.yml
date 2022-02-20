@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Ruslan Khozyainov
+  description: Kibana role installation
+  license: etc
+  min_ansible_version: 2.1
+  role_name: kibana-role
+  platforms:
+    - name: Ubuntu
+      versions:
+      - all
+    - name: CentOS
+      versions:
+      - all
+  galaxy_tags: []
