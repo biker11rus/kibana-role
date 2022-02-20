@@ -3,7 +3,8 @@ galaxy_info:
   description: Kibana role installation
   license: etc
   min_ansible_version: 2.1
-  role_name: kibana-role
+  role_name: kibana_role
+  namespace: rkh_netology
   platforms:
     - name: Ubuntu
       versions:
