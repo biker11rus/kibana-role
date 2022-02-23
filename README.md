@@ -7,7 +7,7 @@ Requirements
 ------------
 
   * Поддерживаются только ОС семейств debian и EL.
-  * Elasticsearch instance
+  * Elasticsearch
 
 
 Role Variables

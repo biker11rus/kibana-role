@@ -13,9 +13,19 @@
     failed_when: not stat_result.stat.exists
   - name: get fact
     service_facts:
-  - name: Check if kibana is running 
+  - name: Check if kibana service is running 
     assert:
       that:
         ansible_facts.services["kibana.service"].state == "running"
       fail_msg: "Kibana service not running"
       success_msg: "Kibana service running"
+  - name: Check that you can connect (GET) to a page and it returns a status 200
+    uri:
+      url: http://localhost:5601
+    register: kibana_state
+  - name: Check if kibana service is running 
+    assert:
+      that:
+        - kibana_state.status == 200
+      fail_msg: "Kibana connect (GET) not returns a status 200"
+      success_msg: "Kibana connect (GET) returns a status 200"

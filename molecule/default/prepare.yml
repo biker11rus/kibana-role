@@ -1,0 +1,14 @@
+---
+- name: elastic install
+  hosts: all
+  tasks:
+    - name: "Include elasicsearch role"
+      include_role:
+        name: "elasticsearch"
+    - name: restart Elasticsearch
+      become: true
+      service:
+        name: elasticsearch
+        state: restarted
+      when: ansible_virtualization_type == 'docker'
+        
