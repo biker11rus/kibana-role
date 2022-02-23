@@ -6,7 +6,9 @@ Kibana role
 Requirements
 ------------
 
-Поддерживаются только ОС семейств debian и EL.
+  * Поддерживаются только ОС семейств debian и EL.
+  * Elasticsearch instance
+
 
 Role Variables
 --------------
