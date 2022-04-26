@@ -3,11 +3,6 @@ pipeline {
         label 'centos'
     }
     stages {
-        stage('clean') {
-            steps {
-                cleanWs()
-            }
-        }
         stage('requirements') {
             steps{
                sh "pip3 install -r tox-requirements.txt" 
