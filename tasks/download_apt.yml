@@ -1,7 +1,7 @@
 ---
 - name: "Download kibana's deb"
   get_url:
-    url: "https://artifacts.elastic.co/downloads/kibana/kibana-{{ kibana_version }}-amd64.deb"
+    url: "https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-{{ kibana_version }}-amd64.deb"
     dest: "/tmp/kibana-{{ kibana_version }}-amd64.deb"
     mode: 0755
     validate_certs: false

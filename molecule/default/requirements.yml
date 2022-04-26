@@ -1,4 +1,4 @@
 ---
 - name: elasticsearch
-  src: git@github.com:netology-code/mnt-homeworks-ansible.git
-  scm: git
+  src: https://github.com/biker11rus/elastic_role.git
+  # scm: git
