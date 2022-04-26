@@ -8,11 +8,6 @@ pipeline {
                 cleanWs()
             }
         }
-        // stage('git') {
-        //     steps {
-        //         git credentialsId: '09839795-e2da-4765-b6b7-9741b360b426', url: 'git@github.com:biker11rus/kibana-role.git'
-        //     }
-        }
         stage('requirements') {
             steps{
                sh "pip3 install -r tox-requirements.txt" 
